@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "adrianhumphreys.silverstripe",
+    "mikestead.dotenv",
+    "firefox-devtools.vscode-firefox-debug",
+    "EditorConfig.EditorConfig",
+    "berublan.vscode-log-viewer",
+    "xdebug.php-debug",
+    "bmewburn.vscode-intelephense-client",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.npm-intellisense",
+    "dbaeumer.vscode-eslint",
+    "syler.sass-indented"
+  ]
+}

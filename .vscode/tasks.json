@@ -1,0 +1,181 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "dev/build - local",
+      "type": "shell",
+      "command": "ddev php ./vendor/silverstripe/framework/cli-script.php dev/build flush",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "focus": true
+      },
+      "icon": {
+        "color": "terminal.ansiBlue"
+      }
+    },
+    {
+      "label": "flush - local",
+      "type": "shell",
+      "command": "ddev php ./vendor/silverstripe/framework/cli-script.php flush",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "focus": true
+      },
+      "icon": {
+        "color": "terminal.ansiBlue"
+      }
+    },
+    {
+      "label": "flushh (hard) - local",
+      "type": "shell",
+      "command": "ddev exec \"rm -rf /var/www/html/silverstripe-cache/*\" && php -r 'opcache_reset();'",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "focus": true
+      },
+      "icon": {
+        "color": "terminal.ansiBlue"
+      }
+    },
+    {
+      "label": "ddev start",
+      "type": "shell",
+      "command": "ddev start",
+      "group": "build",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "icon": {
+        "color": "terminal.ansiMagenta"
+      }
+    },
+    {
+      "label": "ddev stop",
+      "type": "shell",
+      "command": "ddev stop",
+      "group": "build",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "icon": {
+        "color": "terminal.ansiMagenta"
+      }
+    },
+    {
+      "label": "ddev restart",
+      "type": "shell",
+      "command": "ddev restart",
+      "group": "build",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "icon": {
+        "color": "terminal.ansiMagenta"
+      }
+    },
+    {
+      "label": "ddev ssh",
+      "type": "shell",
+      "command": "ddev ssh",
+      "group": "build",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "focus": true
+      },
+      "icon": {
+        "color": "terminal.ansiMagenta"
+      }
+    },
+    {
+      "label": "ddev logs",
+      "type": "shell",
+      "command": "ddev logs -f",
+      "group": "build",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "focus": true
+      },
+      "icon": {
+        "color": "terminal.ansiMagenta"
+      }
+    },
+    {
+      "label": "composer update",
+      "type": "shell",
+      "command": "ddev composer u",
+      "group": "build",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "focus": true
+      },
+      "icon": {
+        "color": "terminal.ansiMagenta"
+      }
+    },
+    {
+      "label": "composer vendor-expose",
+      "type": "shell",
+      "command": "ddev composer vendor-expose",
+      "group": "build",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "focus": true
+      },
+      "icon": {
+        "color": "terminal.ansiMagenta"
+      }
+    },
+    {
+      "label": "xdebug on",
+      "type": "shell",
+      "command": "ddev xdebug true",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "focus": false,
+        "close": true
+      },
+      "icon": {
+        "color": "terminal.ansiMagenta"
+      }
+    },
+    {
+      "label": "xdebug off",
+      "type": "shell",
+      "command": "ddev xdebug false",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "focus": false,
+        "close": true
+      },
+      "icon": {
+        "color": "terminal.ansiMagenta"
+      }
+    }
+  ]
+}
