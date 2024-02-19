@@ -3,6 +3,6 @@
     <article>
         <h1>$Title</h1>
         <div class="content">$Content</div>
-        $Image.FocusFillMax(1000,500)
+        <img src="$Image.FocusFillMax(1000,500).Format(avif).URL" alt="">
     </article>
 </div>

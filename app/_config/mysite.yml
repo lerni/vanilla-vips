@@ -4,7 +4,21 @@ Name: app
 SilverStripe\Core\Manifest\ModuleManifest:
   project: app
 
+SilverStripe\Assets\File:
+  allowed_extensions:
+    avif: true
+
+SilverStripe\Assets\Image:
+  extensions:
+    - App\Extension\ImageFormatExtension
+SilverStripe\Assets\Storage\DBFile:
+  extensions:
+    - App\Extension\ImageFormatExtension
+
 SilverStripe\Core\Injector\Injector:
+  SilverStripe\Assets\Image_Backend:
+    properties:
+      Quality: 50
   Intervention\Image\ImageManager:
     constructor:
       # - { driver: imagick }

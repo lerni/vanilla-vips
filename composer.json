@@ -14,7 +14,7 @@
         "silverstripe/recipe-cms": "^5",
         "silverstripe-themes/simple": "~3.3.0",
         "silverstripe/login-forms": "^5",
-        "silverstripe/asset-admin": "^2",
+        "silverstripe/asset-admin": "2.x-dev",
         "jonom/silverstripe-betternavigator": "^6",
         "jonom/focuspoint": "dev-master",
         "jcupitt/vips": "^v2",
